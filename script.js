@@ -46,7 +46,7 @@ function getWeather(event){
       document.getElementById('cName').innerText = name.replace('-',' ');
       document.getElementById('modBody').innerHTML = `<span class='fw-bold'>Description:</span> ${weatherData.weather[0].description} <br>
                                                       <span class='fw-bold'>Temp:</span> ${weatherData.main.temp}&#176;C <br>
-                                                      <span class='fw-bold'>Humidity:</span>  ${weatherData.main.humidity}%<br>
+                                                      <span class='fw-bold'>Humidity:</span>  ${weatherData.main.humidity} %<br>
                                                       <span class='fw-bold'>Wind Speed:</span>  ${weatherData.wind.speed} m/s`
   }).catch(err=> console.log("Error in Weather data fetching :",err))
 }
